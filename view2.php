@@ -36,18 +36,43 @@
 					
 					<!-- CONTENT -->
 				
-					<p>Thanks for updating! </p>
+					<p>Thanks for viewing! </p>
 					
 					<?php
 					
 					include('dbconnect.php');
 					
-					$major = $_POST['major'];
+					//$major = $_POST['major'];
 					$building = $_POST['building'];
-					$skill_level = $_POST['skill_level'];
-					$query = "INSERT INTO majors (major, building, skill_level) VALUES ('$major','$building','$skill_level')";
-					
+					//$skill_level = $_POST['skill_level'];
+					//$query = "INSERT INTO majors (major, building, skill_level) VALUES ('$major','$building','$skill_level')";
+					$query = "SELECT * FROM majors where building = '$building'";
 					$result = mysql_query($query)
+						or die(mysql_error());
+					
+						echo "<h1>Majors in ".$building."</h1>";
+
+					while ($row = mysql_fetch_array($result)){
+						echo $row['major'];
+						echo ". Skill level is ";
+						echo $row['skill_level'];
+						
+						echo "<br />";
+						}
+					//$num=mysqli_num_rows($result);
+					//$r = mysqli_fetch_row($result);
+					//while ($list = mysql_fetch_array($result)) {
+					//echo $r['major'];
+					//}
+				/*$i=0;
+while ($i < $num) {
+
+
+
+echo "<b>major</b><br>";
+ echo $maj; 
+$i++;
+} */
 					?>
 					
 					

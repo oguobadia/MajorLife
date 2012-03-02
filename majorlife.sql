@@ -20,7 +20,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 
 CREATE DATABASE IF NOT EXISTS majorlife;
-GRANT ALL PRIVILEGES ON majorlife.* to 'assist'@'localhost' identified by 'assist';
+GRANT ALL PRIVILEGES ON majorlife.* to 'root'@'localhost' identified by 'root';
 USE majorlife;
 
 CREATE TABLE IF NOT EXISTS `majors` (
