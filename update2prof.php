@@ -29,8 +29,9 @@
  
     <p>An interactive website where UMW students can determine ideal residential choices based upon major and academic interests. Students can determine the time distribution of their presence in certain buildings, thus allowing them to find the most convenient location to live. Along with this will be informal commentary on each building as well as the social and academic nature of each major.</p>
   <!-- end #sidebar1 --></div>
-  <div id="mainContent">
-  <h1><a href="updateprof.php">Update Professor Info</a></h1>
+    <div id="mainContent">
+   <h1><a href="update.php">Update Building Info</a></h1>
+   <h1><a href="updateprof.php">Update Professor Info</a></h1>
    <h1><a href="view.php">View</a></h1>
    
 					
