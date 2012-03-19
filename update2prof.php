@@ -30,7 +30,7 @@
     <p>An interactive website where UMW students can determine ideal residential choices based upon major and academic interests. Students can determine the time distribution of their presence in certain buildings, thus allowing them to find the most convenient location to live. Along with this will be informal commentary on each building as well as the social and academic nature of each major.</p>
   <!-- end #sidebar1 --></div>
   <div id="mainContent">
-   <h1><a href="update.php">Update</a></h1>
+  <h1><a href="updateprof.php">Update Professor Info</a></h1>
    <h1><a href="view.php">View</a></h1>
    
 					
@@ -45,7 +45,9 @@
 					$major = $_POST['major'];
 					$building = $_POST['building'];
 					$skill_level = $_POST['skill_level'];
-					$query = "INSERT INTO majors (major, building, skill_level) VALUES ('$major','$building','$skill_level')";
+					$favpro = $_POST['favprof'];
+					$query = "INSERT INTO majors (major, building, skill_level) UNION
+					VALUES ('$major','$building','$skill_level') AND INSERT INTO professor (major, fav_professor) VALUES '$major','$favprof')";
 					
 					$result = mysql_query($query)
 					?>

@@ -20,7 +20,10 @@
 
 <body class="twoColFixLtHdr">
 <div id="topthing">
-  <p>Login</p></div>
+	<p><a href="login.html">Login</a></p>
+	<p><a href="register.php">Create Account</a></p>
+
+  <div>
 <div id="container">
   <div id="header">
     <h1>MajorLife: </h1><h3 style="margin-top:-15px;">where to live on UMW's campus</h3>
