@@ -33,7 +33,7 @@
     <p>An interactive website where UMW students can determine ideal residential choices based upon major and academic interests. Students can determine the time distribution of their presence in certain buildings, thus allowing them to find the most convenient location to live. Along with this will be informal commentary on each building as well as the social and academic nature of each major.</p>
   <!-- end #sidebar1 --></div>
   <div id="mainContent">
-   
+   <p>Please Login</p> 
 	<!-- end #mainContent --></div>
 	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
   <div id="footer">

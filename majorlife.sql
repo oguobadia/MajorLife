@@ -20,7 +20,13 @@ SET time_zone = "+00:00";
 -- Database: `majorlife`
 --
 
+<<<<<<< HEAD
 -- --------------------------------------------------------
+=======
+CREATE DATABASE IF NOT EXISTS majorlife;
+GRANT ALL PRIVILEGES ON majorlife.* to 'root'@'localhost' identified by 'root';
+USE majorlife;
+>>>>>>> 3964bf60d6e7fbcae37e288a7b2e216716e7ec01
 
 --
 -- Table structure for table `comments`
