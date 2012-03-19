@@ -31,16 +31,18 @@
   <!-- end #sidebar1 --></div>
   <div id="mainContent">
    <h1><a href="update.php">Update Building Info</a></h1>
+   <h1><a href="updateprof.php">Update Professor Info</a></h1>
    <h1><a href="view.php">View</a></h1>
    
 					<!-- CONTENT -->
 		
 					
-					<form method = "post" action = "update2.php">
+					<form method = "post" action = "update2prof.php">
 					<table>
 					<tr><td>Major</td><td><input type="text" id="major" name="major" /></td></tr>
 					<tr><td>Building</td><td><input type="text" id="building" name="building" /></td></tr>
 					<tr><td>Skill Level</td><td><input type="number" name="skill_level" min="1" max="10" step="1" value="1" size="3"/>
+					<tr><td>Favorite Professor</td><td><input type="text" id="favprof" name="favprof" /></td></tr>
 					
 					
 					</td></tr>

@@ -30,26 +30,36 @@
     <p>An interactive website where UMW students can determine ideal residential choices based upon major and academic interests. Students can determine the time distribution of their presence in certain buildings, thus allowing them to find the most convenient location to live. Along with this will be informal commentary on each building as well as the social and academic nature of each major.</p>
   <!-- end #sidebar1 --></div>
   <div id="mainContent">
-   <h1><a href="update.php">Update Building Info</a></h1>
+  <h1><a href="updateprof.php">Update Professor Info</a></h1>
    <h1><a href="view.php">View</a></h1>
    
+					
 					<!-- CONTENT -->
-		
+				
+					<p>Thanks for updating! </p>
 					
-					<form method = "post" action = "update2.php">
-					<table>
-					<tr><td>Major</td><td><input type="text" id="major" name="major" /></td></tr>
-					<tr><td>Building</td><td><input type="text" id="building" name="building" /></td></tr>
-					<tr><td>Skill Level</td><td><input type="number" name="skill_level" min="1" max="10" step="1" value="1" size="3"/>
+					<?php
+					
+					include('dbconnect.php');
+					
+					$major = $_POST['major'];
+					$building = $_POST['building'];
+					$skill_level = $_POST['skill_level'];
+					$favpro = $_POST['favprof'];
+					$query = "INSERT INTO majors (major, building, skill_level) VALUES ('$major','$building','$skill_level')";
+					$query = "INSERT INTO professor (major, fav_professor) VALUES '$major','$favprof')";
+					
+					$result = mysql_query($query)
+					?>
 					
 					
-					</td></tr>
-					<tr><td>
-					<input type="submit" value="Update MajorLife" /></td></tr>
-					</table>
 					
 					</form>
 					<!-- END CONTENT -->
+					
+				</div>
+				 
+
 	<!-- end #mainContent --></div>
 	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
   <div id="footer">
