@@ -46,8 +46,8 @@
 					$building = $_POST['building'];
 					$skill_level = $_POST['skill_level'];
 					$favpro = $_POST['favprof'];
-					$query = "INSERT INTO majors (major, building, skill_level) VALUES ('$major','$building','$skill_level')";
-					$query = "INSERT INTO professor (major, fav_professor) VALUES '$major','$favprof')";
+					$query = "INSERT INTO majors (major, building, skill_level) UNION
+					VALUES ('$major','$building','$skill_level') AND INSERT INTO professor (major, fav_professor) VALUES '$major','$favprof')";
 					
 					$result = mysql_query($query)
 					?>
